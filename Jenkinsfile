@@ -2,12 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/ganapathi-selva/Jenkins_playwright.git'
-            }
-        }
-        
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'

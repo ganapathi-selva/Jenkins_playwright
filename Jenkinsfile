@@ -2,6 +2,13 @@ pipeline {
     agent any
     
     stages {
+
+         stage('test') {
+            steps {
+                echo 'npm install'
+            }
+        }
+        
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'

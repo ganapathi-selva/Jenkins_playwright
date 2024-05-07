@@ -8,10 +8,6 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "jsdoc": "./node_modules/jsdoc/jsdoc.js -X docs/source/*.js > docs/output/table.json",
-    "build": "node build/bundle.js",
-    "dev": "watch 'npm run build' source",
-    "pretest": "tsc --incremental -p tests/tsconfig.json",
     "test": "npx playwright test --trace on",
     "reports": "npx playwright show-report tests/reports",
     "lint:test": "npx eslint --format html . > eslint-report.html"

@@ -9,7 +9,7 @@
   "license": "ISC",
   "scripts": {
     "test": "npx playwright test --trace on",
-    "reports": "npx playwright show-report tests/reports",
+    "reports": "npx playwright show-report playwright-report/",
     "lint:test": "npx eslint --format html . > eslint-report.html"
   },
   "devDependencies": {
